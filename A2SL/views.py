@@ -16,6 +16,8 @@ def home_view(request):
 def about_view(request):
 	return render(request,'about.html')
 
+def signtotext(request):
+	return render(request,'signtotext.html')
 
 def contact_view(request):
 	return render(request,'contact.html')

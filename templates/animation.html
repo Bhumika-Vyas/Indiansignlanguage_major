@@ -77,7 +77,7 @@
 
 		function videoPlay(videoNum)
 		{
-			document.getElementById("list").getElementsByTagName("li")[videoNum].style.color = "#09edc7";
+			document.getElementById("list").getElementsByTagName("li")[videoNum].style.color = "#003f87";
 			document.getElementById("list").getElementsByTagName("li")[videoNum].style.fontSize = "xx-large";
 			document.getElementById("videoPlayer").setAttribute("src", videoSource[videoNum]);
 	    	document.getElementById("videoPlayer").load();
@@ -85,14 +85,14 @@
 
 		}
 		document.getElementById('videoPlayer').addEventListener('ended', myHandler, false);
-		document.getElementById("list").getElementsByTagName("li")[0].style.color = "#09edc7";
+		document.getElementById("list").getElementsByTagName("li")[0].style.color = "#003f87";
 		document.getElementById("list").getElementsByTagName("li")[0].style.fontSize = "xx-large";
 
 		videoPlay(0); // play the video
 
 		function myHandler()
 		{
-	 		document.getElementById("list").getElementsByTagName("li")[i].style.color = "#feda6a";
+	 		document.getElementById("list").getElementsByTagName("li")[i].style.color = "#003f87";
 			document.getElementById("list").getElementsByTagName("li")[i].style.fontSize = "20px";
 			i++;
 	    	if (i == videoCount)
